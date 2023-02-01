@@ -5,5 +5,5 @@ from .models import Art
 class ArtSerializer(serializers.ModelSerializer):
     class Meta:
         fields = (
-            'id', 'person', 'artist', 'artwork_name', 'description')
+            'id', 'owner', 'artist', 'artwork_name', 'description')
         model = Art
