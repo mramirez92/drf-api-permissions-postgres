@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 
 
 class Art(models.Model):
-    person = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     artist = models.CharField(max_length=128)
     artwork_name = models.CharField(max_length=128)
     description = models.TextField()
